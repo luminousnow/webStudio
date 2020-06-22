@@ -1,0 +1,37 @@
+@import "../utils/variables";
+
+/* Feature css options */
+.feature__list {
+  @extend %no-list;
+  display: flex;
+}
+
+.feature__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.feature__icon {
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 0;
+
+  border-radius: 4px;
+
+  background-color: $bgc-secondary;
+}
+
+.feature__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $font-color-secondary;
+  text-transform: uppercase;
+}

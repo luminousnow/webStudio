@@ -1,0 +1,29 @@
+@import "../utils/variables";
+
+/* Logo */
+%logo {
+  @extend %no-link;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* Logo header */
+.logo__nav {
+  @extend %logo;
+  margin-right: 80px;
+
+  color: $font-color-secondary;
+}
+
+/* Logo footer */
+.logo__footer {
+  @extend %logo;
+  color: $font-color-third;
+}
+
+/* Logo accent */
+.logo__accent {
+  color: $font-color-active-element;
+}

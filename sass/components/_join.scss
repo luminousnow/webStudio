@@ -1,0 +1,30 @@
+@import "../utils/variables";
+
+.join__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.join__conteiner {
+  display: inline-flex;
+  align-items: center;
+
+  .join__email {
+    margin-right: 12px;
+    padding: 15px 16px;
+    width: 358px;
+
+    color: $font-color-ftr-contact;
+    background-color: $bgc-footer;
+    font-size: 16px;
+    line-height: 1.25;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

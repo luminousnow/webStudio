@@ -1,0 +1,34 @@
+@import "../utils/variables";
+
+/* Clients */
+.client__list {
+  @extend %no-list;
+  display: flex;
+}
+
+.client__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client__link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $border-color-client;
+  border-radius: 4px;
+  color: $font-color-primary;
+  fill: currentColor;
+
+  transition: color $transition-duration $transition-timing-function
+      $transition-delay,
+    border $transition-duration $transition-timing-function $transition-delay;
+
+  &:hover,
+  &:focus {
+    color: $font-color-active-element;
+    border: 1px solid $font-color-active-element;
+  }
+}
