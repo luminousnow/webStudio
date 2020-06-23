@@ -1,4 +1,7 @@
 @import "../utils/variables";
+@import "../utils/utilities";
+@import "../utils/placeholders";
+@import "../utils/breakpoints";
 
 .header {
   border-bottom: 1px solid $border-color-hdr;

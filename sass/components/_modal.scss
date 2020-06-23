@@ -1,4 +1,7 @@
 @import "../utils/variables";
+@import "../utils/utilities";
+@import "../utils/placeholders";
+@import "../utils/breakpoints";
 
 .backdrop {
   position: fixed;
@@ -43,15 +46,13 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 0;
-    right: 0;
-    transform: translate(30%, -30%);
+    top: 8px;
+    right: 8px;
 
     border-radius: 50%;
     border-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: $bgc-primary;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 1px 3px rgba(0, 0, 0, 0.12);
   }
 }
 

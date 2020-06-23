@@ -1,21 +1,20 @@
 @import "../utils/variables";
+@import "../utils/utilities";
+@import "../utils/placeholders";
+@import "../utils/breakpoints";
 
 /* General */
 .footer {
-  padding-top: 48px;
-  padding-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   color: $font-color-third;
-
   background-color: $bgc-footer;
 }
 
 .footer__content {
   display: flex;
   align-items: baseline;
-  padding-bottom: 28px;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Footer address css options */
@@ -84,15 +83,4 @@
   &:focus {
     background-color: $font-color-active-element;
   }
-}
-
-/* Copiright */
-.copiright {
-  padding-top: 18px;
-  padding-bottom: 20px;
-
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-  color: $font-color-ftr-copiright;
 }

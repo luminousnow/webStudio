@@ -41,17 +41,6 @@ img {
   height: auto;
 }
 
-/* delete underline from the link */
-%no-link {
-  text-decoration: none;
-}
-
-/* delete list style */
-%no-list {
-  list-style: none;
-  padding: 0px;
-}
-
 /* visually hidden */
 .portfolio__title--hiden,
 .feature__title--hiden,
