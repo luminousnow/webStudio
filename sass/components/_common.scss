@@ -2,13 +2,18 @@
 @import "../utils/utilities";
 @import "../utils/placeholders";
 @import "../utils/breakpoints";
+@import "../utils/mixin";
 
 .conteiner {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include breakpoints($mobile);
+  @include breakpoints($tablet);
+  @include breakpoints($desktop);
 }
 
 /* Sections css options*/
