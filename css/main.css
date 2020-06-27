@@ -543,12 +543,42 @@ img {
 }
 
 .footer__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__contacts {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
 
 /* Footer address css options */
@@ -575,9 +605,18 @@ img {
 }
 
 /* Footer social net css options */
-.footer-social {
-  margin-left: 70px;
-  margin-right: 94px;
+@media screen and (max-width: 1199px) {
+  .footer-social {
+    padding-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 70px;
+    margin-right: 94px;
+  }
 }
 
 .footer-social__title {
@@ -592,6 +631,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-social__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .social-net:not(:last-child) {
@@ -1118,6 +1165,12 @@ img {
   padding: 0px;
 }
 
+@media screen and (max-width: 1199px) {
+  .join {
+    text-align: center;
+  }
+}
+
 .join__title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -1127,18 +1180,22 @@ img {
 }
 
 .join__conteiner {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .join__conteiner {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .join__conteiner .join__email {
-  margin-right: 12px;
   padding: 15px 16px;
-  width: 358px;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
   font-size: 16px;
@@ -1147,6 +1204,33 @@ img {
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1199px) {
+  .join__conteiner .join__email {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) and (max-width: 768px) {
+  .join__conteiner .join__email {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join__conteiner .join__email {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join__conteiner .join__email {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 html {
@@ -1668,7 +1752,7 @@ img {
   display: flex;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .client__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1676,9 +1760,11 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .client__item {
     margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1694,6 +1780,7 @@ img {
   display: flex;
   width: 210px;
   height: 90px;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1706,6 +1793,12 @@ img {
   fill: currentColor;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+@media screen and (min-width: 480px) {
+  .client__link {
+    width: 210px;
+  }
 }
 
 @media screen and (min-width: 768px) {

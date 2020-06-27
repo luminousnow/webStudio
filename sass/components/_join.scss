@@ -4,6 +4,12 @@
 @import "../utils/breakpoints";
 @import "../utils/mixin";
 
+.join {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
 .join__title {
   margin-bottom: 20px;
 
@@ -14,13 +20,15 @@
 }
 
 .join__conteiner {
-  display: inline-flex;
-  align-items: center;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    align-items: center;
+  }
 
   .join__email {
-    margin-right: 12px;
     padding: 15px 16px;
-    width: 358px;
 
     color: $font-color-ftr-contact;
     background-color: $bgc-footer;
@@ -30,5 +38,24 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+      width: 358px;
+    }
   }
 }
