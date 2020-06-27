@@ -8,7 +8,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -64,7 +64,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -198,7 +198,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -306,8 +306,19 @@ img {
 .team--section,
 .client--section,
 .portfolio--section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .feature--section,
+  .product--section,
+  .team--section,
+  .client--section,
+  .portfolio--section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .feature__title,
@@ -333,7 +344,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -446,7 +457,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -624,7 +635,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -885,7 +896,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -971,30 +982,54 @@ img {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  width: 100%;
   max-width: 1600px;
-  height: 600px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../img/header-img.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/header-img.jpg");
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    height: 600px;
+  }
+}
+
 .hero .hero__box {
-  width: 710px;
+  width: 360px;
   text-align: center;
 }
 
 .hero .hero__box .hero__title {
   margin-top: 0px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   color: #ffffff;
   text-align: center;
@@ -1011,7 +1046,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -1129,7 +1164,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -1253,7 +1288,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -1552,7 +1587,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -1675,7 +1710,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -1805,7 +1840,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -1989,7 +2024,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {
@@ -2115,7 +2150,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 body {

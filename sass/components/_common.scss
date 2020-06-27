@@ -10,21 +10,18 @@
   padding-left: 15px;
   padding-right: 15px;
 
+  // mixin breakpoints
   // @media screen and (min-width: 480px) {
   //   width: 480px;
   // }
-
+  @include breakpoints($mobile);
   // @media screen and (min-width: 768px) {
   //   width: 768px;
   // }
-
+  @include breakpoints($tablet);
   // @media screen and (min-width: 1200px) {
   //   width: 1200px;
   // }
-
-  // mixin breakpoints
-  @include breakpoints($mobile);
-  @include breakpoints($tablet);
   @include breakpoints($desktop);
 }
 
@@ -34,8 +31,13 @@
 .team--section,
 .client--section,
 .portfolio--section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .feature__title,
