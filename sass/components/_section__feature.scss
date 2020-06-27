@@ -7,20 +7,28 @@
 /* Feature css options */
 .feature__list {
   @extend %no-list;
-  display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .feature__item {
-  width: 270px;
+  width: 354px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .feature__icon {
   display: block;
-  width: 270px;
+  width: 354px;
   height: 120px;
   margin-bottom: 30px;
   padding: 25px 0;
