@@ -432,8 +432,27 @@ img {
           justify-content: center;
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 10px;
+@media screen and (max-width: 767px) {
+  .filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -8px -8px 32px -8px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter__item {
+    margin: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .filter__button {
