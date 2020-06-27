@@ -23,7 +23,23 @@
           <a href="./index.html" class="logo__nav">
             <span class="logo__accent">Web</span> Studio
           </a>
-          <div class="header-box">
+          <button
+            class="menu__button menu__button--is-open"
+            type="button"
+            data-menu-button
+          >
+            <svg
+              class="menu__icon"
+              width="40"
+              height="40"
+              aria-label="переключатель мобильного мею"
+              aria-controls="menu__conteiner"
+            >
+              <use class="icon__cross" href="./img/sprite.svg#icon-cross"></use>
+              <use class="icon__menu" href="./img/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu__conteiner" id="menu__conteiner" data-menu>
             <nav class="nav">
               <ul class="menu">
                 <li class="menu__item">
@@ -671,21 +687,7 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <!-- test sending form -->
-    <!-- <script>
-      (() => {
-        document
-          .querySelector(".js-speaker-form")
-          .addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-
-            e.currentTarget.reset();
-          });
-      })();
-    </script> -->
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/form.js"></script> -->
   </body>
 </html>
