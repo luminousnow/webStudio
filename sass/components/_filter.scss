@@ -5,6 +5,18 @@
 @import "../utils/mixin";
 
 /* Filter button css options*/
+
+.filter {
+  @extend %no-list;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .filter__button {
   padding: 6px 22px;
 

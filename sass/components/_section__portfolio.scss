@@ -4,20 +4,7 @@
 @import "../utils/breakpoints";
 @import "../utils/mixin";
 
-
 /* Portfolio css options */
-
-.filter {
-  @extend %no-list;
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-
-.filter__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .portfolio__list {
   @extend %no-list;
   display: flex;

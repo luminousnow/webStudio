@@ -136,7 +136,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -270,7 +270,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -416,12 +416,26 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
 
 /* Filter button css options*/
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .filter__button {
   padding: 6px 22px;
   border-style: none;
@@ -529,7 +543,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -754,7 +768,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -1010,7 +1024,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -1160,7 +1174,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -1315,7 +1329,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -1441,7 +1455,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -1740,7 +1754,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -1900,7 +1914,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -2054,26 +2068,12 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
 
 /* Portfolio css options */
-.filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.filter__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .portfolio__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2238,7 +2238,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
@@ -2374,7 +2374,7 @@ img {
 }
 
 /* delete list style */
-.footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .filter, .portfolio__list, .product__list, .team__list, .team__social-net {
+.filter, .footer-social__list, .menu, .nav-contact, .client__list, .feature__list, .portfolio__list, .product__list, .team__list, .team__social-net {
   list-style: none;
   padding: 0px;
 }
