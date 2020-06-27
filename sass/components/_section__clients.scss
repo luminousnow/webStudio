@@ -8,9 +8,9 @@
 .client__list {
   @extend %no-list;
   display: flex;
+  flex-wrap: wrap;
 
   @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
     margin: -15px;
   }
 }

@@ -101,8 +101,8 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     @media screen and (max-width: 1199px) {
-      flex-wrap: wrap;
       justify-content: space-around;
     }
   }

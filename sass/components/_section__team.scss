@@ -11,13 +11,11 @@
 
 .team__list {
   @extend %no-list;
+  display: flex;
+  flex-wrap: wrap;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    @media screen and (max-width: 1199px) {
-      flex-wrap: wrap;
-      margin: -15px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: -15px;
   }
 }
 
@@ -27,12 +25,19 @@
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 15px;
     width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
+    width: 270px;
     &:not(:last-child) {
       margin-right: 30px;
     }
