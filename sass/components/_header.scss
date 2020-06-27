@@ -24,7 +24,7 @@
 .header-box {
   display: none;
   @media screen and (min-width: 768px) {
-    display: flex;
+    // display: flex;
 
     &__item + &__item {
       margin-left: 50px;
