@@ -4,8 +4,15 @@
 @import "../utils/breakpoints";
 @import "../utils/mixin";
 
-
 /* Product css options */
+.product {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .product__list {
   @extend %no-list;
   display: flex;

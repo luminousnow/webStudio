@@ -2123,6 +2123,16 @@ img {
 }
 
 /* Product css options */
+.product {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .product {
+    display: block;
+  }
+}
+
 .product__list {
   display: -webkit-box;
   display: -ms-flexbox;
