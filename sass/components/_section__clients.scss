@@ -8,15 +8,28 @@
 .client__list {
   @extend %no-list;
   display: flex;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.client__item:not(:last-child) {
-  margin-right: 30px;
+.client__item {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .client__link {
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 90px;
   justify-content: center;
   align-items: center;
@@ -25,6 +38,14 @@
   border-radius: 4px;
   color: $font-color-primary;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 
   transition: color $transition-duration $transition-timing-function
       $transition-delay,
