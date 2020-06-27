@@ -21,6 +21,17 @@
   }
 }
 
+.header-box {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    &__item + &__item {
+      margin-left: 50px;
+    }
+  }
+}
+
 .nav {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -32,14 +43,6 @@
 /* Header Menu css options */
 .menu {
   @extend %no-list;
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: flex;
-
-    &__item + &__item {
-      margin-left: 50px;
-    }
-  }
 }
 
 .menu__link {
