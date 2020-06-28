@@ -207,8 +207,8 @@ textarea {
 .checkbox__icon {
   display: inline-flex;
   margin-right: 9px;
-  width: 15px;
-  height: 15px;
+  min-width: 15px;
+  min-height: 15px;
 
   border: 2px solid $font-color-secondary;
   border-radius: 2px;
