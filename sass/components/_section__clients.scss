@@ -40,7 +40,7 @@
   border: 1px solid $border-color-client;
   border-radius: 4px;
   color: $font-color-primary;
-  fill: currentColor;
+  fill: $border-color-client;
 
   @media screen and (min-width: $mobile) {
     width: 210px;

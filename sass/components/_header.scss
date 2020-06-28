@@ -19,6 +19,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 60px;
+  max-height: 80px;
   @media screen and (min-width: $tablet) {
     display: flex;
   }
@@ -45,8 +46,6 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
 
     &__item + &__item {
       margin-left: 50px;
@@ -54,28 +53,31 @@
   }
 }
 
-.nav {
-  @media screen and (max-width: $tablet - 1px) {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-}
-
 /* Header Menu css options */
-.menu {
+.nav-menu {
   @extend %no-list;
   font-size: 18px;
   line-height: 1.16;
 
+  @media screen and (max-width: $tablet - 1px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: $tablet) {
     display: inline-flex;
+    margin-right: 84px;
+
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     .menu__item:not(:last-child) {
       margin-right: 50px;
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 290px;
   }
 }
 
@@ -87,6 +89,11 @@
 
   border: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: $font-color-active-element;
+  }
 
   .icon__cross {
     display: none;

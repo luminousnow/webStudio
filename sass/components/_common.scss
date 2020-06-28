@@ -31,7 +31,6 @@
 
 /* Sections css options*/
 .feature--section,
-.product--section,
 .team--section,
 .client--section,
 .portfolio--section {
@@ -42,6 +41,10 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.product--section {
+  padding-bottom: 94px;
 }
 
 .feature__title,
