@@ -20,18 +20,18 @@
   z-index: 999;
 
   color: $font-color-secondary;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 81px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 85px;
     padding-top: 26px;
     padding-bottom: 26px;

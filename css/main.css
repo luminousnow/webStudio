@@ -2356,6 +2356,9 @@ img {
 .card__title {
   margin-bottom: 4px;
   padding: 0px 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

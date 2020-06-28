@@ -19,13 +19,13 @@
   justify-content: space-between;
   align-items: center;
   min-height: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
 
 .menu__conteiner {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     display: none;
     position: absolute;
     top: 100%;
@@ -40,7 +40,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -52,7 +52,7 @@
 }
 
 .nav {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     margin-top: 60px;
     margin-bottom: 60px;
   }
@@ -62,7 +62,7 @@
 .menu {
   @extend %no-list;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: inline-flex;
 
     .menu__item:not(:last-child) {
@@ -92,7 +92,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -104,7 +104,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -138,7 +138,7 @@
     border-radius: 2px;
     background-color: $font-color-active-element;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       bottom: 0;
     }
   }
@@ -147,15 +147,15 @@
 .nav-contact {
   @extend %no-list;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     align-self: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
@@ -164,11 +164,11 @@
   display: flex;
   justify-content: start;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     justify-content: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 30px;
   }
 
@@ -185,7 +185,7 @@
   display: flex;
   justify-content: start;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     justify-content: center;
   }
 
@@ -200,17 +200,17 @@
   @extend %no-link;
   display: flex;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     padding-top: 0px;
     padding-bottom: 8px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop - 1px) {
     padding-top: 0px;
     padding-bottom: 5px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -234,17 +234,17 @@
   @extend %no-link;
   display: flex;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     padding-top: 8px;
     padding-bottom: 0px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop - 1px) {
     padding-top: 5px;
     padding-bottom: 0px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
   }

@@ -8,10 +8,10 @@
 .feature__list {
   @extend %no-list;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: $desktop - 1px) {
       margin: -15px;
     }
   }
@@ -20,18 +20,18 @@
 .feature__item {
   width: 100%;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     width: 450px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 354px;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: $desktop - 1px) {
       margin: 15px;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 270px;
 
     &:not(:last-child) {

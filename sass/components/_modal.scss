@@ -59,7 +59,7 @@
     top: 8px;
     right: 8px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       top: 8px;
       right: 8px;
     }
@@ -74,7 +74,7 @@
 .backdrop--hiden .modal {
   transform: scale(1.1);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     transform: translate(-50%, -50%) scale(1.1);
   }
 
