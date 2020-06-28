@@ -21,6 +21,10 @@ body {
   color: $font-color-primary;
 
   background-color: $bgc-primary;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 h1,

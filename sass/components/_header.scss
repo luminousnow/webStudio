@@ -31,16 +31,18 @@
 }
 
 .menu__conteiner {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
 
-  background-color: $bgc-primary;
+    background-color: $bgc-primary;
 
-  &.menu__button--is-open {
-    display: block;
+    &.menu__button--is-open {
+      display: block;
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -75,6 +77,9 @@
 }
 
 .menu__button {
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
   display: inline-flex;
   z-index: 999;
   margin: 0;
