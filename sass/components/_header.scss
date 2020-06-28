@@ -11,12 +11,6 @@
   &--no-border {
     border: 0px;
   }
-
-  // @media screen and (min-width: 768px) {
-  //   &--no-border {
-  //     border: 0px;
-  //   }
-  // }
 }
 
 /* Header contacts */
@@ -152,7 +146,6 @@
 
 .nav-contact {
   @extend %no-list;
-  // display: inline-block;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
