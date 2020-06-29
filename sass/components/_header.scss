@@ -46,6 +46,8 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
 
     &__item + &__item {
       margin-left: 50px;
@@ -54,19 +56,21 @@
 }
 
 /* Header Menu css options */
-.nav-menu {
-  @extend %no-list;
-  font-size: 18px;
-  line-height: 1.16;
-
+.nav {
   @media screen and (max-width: $tablet - 1px) {
     margin-top: 60px;
     margin-bottom: 60px;
   }
+}
+
+.menu {
+  @extend %no-list;
+  font-size: 18px;
+  line-height: 1.16;
 
   @media screen and (min-width: $tablet) {
     display: inline-flex;
-    margin-right: 84px;
+    // margin-right: 84px;
 
     font-size: 14px;
     line-height: 1.14;
@@ -77,7 +81,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-right: 290px;
+    // margin-right: 290px;
   }
 }
 
