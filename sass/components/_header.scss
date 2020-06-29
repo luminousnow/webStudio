@@ -203,6 +203,7 @@
 .contact-tel {
   display: flex;
   justify-content: start;
+  margin-left: -2px;
 
   @media screen and (max-width: $tablet - 1px) {
     justify-content: center;
