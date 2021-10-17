@@ -1,1 +1,1 @@
-Technologies: GIT, SASS, Mobile-first approach, Media queries, Responsive web design
+Technologies: GIT, SASS, Mobile-first approach, Responsive web design (used Media queries), Modal window + Contact form
