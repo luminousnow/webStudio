@@ -19,10 +19,10 @@ function filtration(e) {
         filterButtonPressed === filterResetButtonPressed ||
         filterButtonPressed === kindeText
       ) {
-        portfolioElementStyle.remove("hidden");
+        portfolioElementStyle.remove("card--hidden");
         console.log(portfolioElementStyle);
       } else {
-        portfolioElementStyle.add("hidden");
+        portfolioElementStyle.add("card--hidden");
         console.log(portfolioElementStyle);
       }
     });
